@@ -75,7 +75,11 @@ class _RatingBadge extends StatelessWidget {
           Icon(Icons.star_rounded, color: Colors.amber, size: 18),
           SizedBox(width: 3),
           Text(
-            rating.toString()
+            rating.toString(),
+            style: TextStyle(
+              color: AppTheme.textPrimary,
+              fontWeight: FontWeight.w700
+            ),
           )
         ],
       )
