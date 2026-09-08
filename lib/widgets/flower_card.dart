@@ -114,7 +114,7 @@ class FlowerCard extends StatelessWidget {
 }
 
 class _RatingChip extends StatelessWidget {
-  const _RatingChip({super.key, required this.rating});
+  const _RatingChip({required this.rating});
 
   final double rating;
 
