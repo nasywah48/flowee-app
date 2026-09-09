@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CircleIconButton extends StatelessWidget {
-  const CircleIconButton({super.key, required this.icon, required this.onTap, required this.iconColor});
+  const CircleIconButton({super.key, required this.icon, required this.onTap, this.iconColor = Colors.black87});
 
   final IconData icon;
   final VoidCallback onTap;
