@@ -13,7 +13,7 @@ void showProfileSheet(BuildContext context) {
 }
 
 class _ProfileSheetContent extends StatelessWidget {
-  const _ProfileSheetContent({super.key, required this.homeContext});
+  const _ProfileSheetContent({required this.homeContext});
   
   final BuildContext homeContext;
 
