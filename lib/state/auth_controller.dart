@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:shared_preferences/util/legacy_to_async_migration_util.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthController extends ValueNotifier<bool> {
   AuthController._() : super(false);
@@ -11,7 +11,7 @@ class AuthController extends ValueNotifier<bool> {
   // dipanggil sekali saat aplikasi baru dibuka (muncul splashscreen),
   // untuk membaca status login yang tersimpan dari sesi SEBELUMNYA.
   Future<void> loadPersistedSession() async {
-    final prefs = await SharedPreferences.instance();
+    final prefs = await SharedPreferences.getInstance();
     value = prefs.getBool(_prefsKey) ?? false;
   }
 

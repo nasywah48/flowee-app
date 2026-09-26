@@ -1,5 +1,4 @@
 import 'package:flowee_app/data/dummy_data.dart';
-import 'package:flowee_app/models/flower.dart';
 import 'package:flowee_app/screens/detail_screen.dart';
 import 'package:flowee_app/state/favorites_controller.dart';
 import 'package:flowee_app/theme/app_theme.dart';

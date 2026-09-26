@@ -25,10 +25,10 @@ class BottomNavItem extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(icon, size: 22, color: selected ? AppTheme.primary : Colors.transparent,)
+            Icon(icon, size: 22, color: selected ? AppTheme.primary : Colors.transparent),
             AnimatedSize(
               duration: Duration(milliseconds: 220),
-              curve: Curve.easeOut,
+              curve: Curves.easeOut,
               child: selected 
                   ? Padding(padding: EdgeInsetsGeometry.only(left: 8),
                   child: Text(

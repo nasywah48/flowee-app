@@ -3,7 +3,6 @@ import 'package:flowee_app/models/flower.dart';
 import 'package:flowee_app/screens/detail_screen.dart';
 import 'package:flowee_app/widgets/flower_card.dart';
 import 'package:flowee_app/widgets/home_content_header.dart';
-import 'package:flowee_app/widgets/home_header.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -71,8 +70,8 @@ return SafeArea(
                 ),
                 delegate: SliverChildBuilderDelegate(
                   (context, index) => FlowerCard(
-                    flower: flowers[index],
-                    onTap: () => _openDetail(flowers[index]),
+                    flower: flowers.toList()[index],
+                    onTap: () => _openDetail(flowers.toList()[index]),
                   ),
                   childCount: flowers.length,
                 ),
