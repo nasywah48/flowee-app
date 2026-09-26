@@ -19,11 +19,12 @@ class CategoryChipList extends StatelessWidget {
        * ListView.separated:
        */
       child: ListView.separated(
+        scrollDirection: Axis.horizontal,
         itemCount: categories.length,
         separatorBuilder: (_, _) => SizedBox(width: 8,),
         itemBuilder: (context, index) {
           final category = categories[index];
-          final isSelected = Category == selectedCategory;
+          final isSelected = category == selectedCategory;
           return ChoiceChip( 
           label: Text(category),
           selected: isSelected,

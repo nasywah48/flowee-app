@@ -21,3 +21,5 @@ bikin kontroller terpisah buat login
 puahReplacement bukan push biasa itu diake biar slash screen hilang dari riwayat navigasi
 dispose untuk menghilangkan widget yang udah kelar dipake
 
+
+flutter build apk

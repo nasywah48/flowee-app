@@ -2,6 +2,7 @@ import 'package:flowee_app/data/dummy_data.dart';
 import 'package:flowee_app/screens/detail_screen.dart';
 import 'package:flowee_app/state/favorites_controller.dart';
 import 'package:flowee_app/theme/app_theme.dart';
+import 'package:flowee_app/widgets/empty_favorite_state.dart';
 import 'package:flowee_app/widgets/flower_card.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +28,7 @@ class FavoriteScreen extends StatelessWidget {
                     .toList();
 
                 if (favoriteFlowers.isEmpty) {
-                  return const Placeholder(); //class empty fav state
+                  return const EmptyFavoriteState(); //class empty fav state
                 }
 
                 return GridView.builder(
