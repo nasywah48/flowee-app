@@ -15,12 +15,12 @@ class HomeHeader extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Halo, Demo User',
+              'Halo, Nasywah',
               style: TextStyle(fontSize: 13, color: AppTheme.textSecondary),
             ),
             SizedBox(height: 3),
             Text(
-              'Bunga Apa Hari Ini?',
+              'Mobil apa yang lagi kamu cari?',
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w800,

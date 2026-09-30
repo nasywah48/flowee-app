@@ -114,7 +114,7 @@ class _SplashScreenState extends State<SplashScreen>
               child: ScaleTransition(
                 scale: _iconScale,
                 child: const Icon(
-                  Icons.local_florist_rounded,
+                  Icons.directions_car_rounded,
                   size: 72,
                   color: Colors.white,
                 ),
@@ -126,7 +126,7 @@ class _SplashScreenState extends State<SplashScreen>
               child: FadeTransition(
                 opacity: _textFade,
                 child: Text(
-                  'Flowee',
+                  'PuspaRa',
                   style: AppTheme.display(
                     fontSize: 34,
                     color: Colors.white,

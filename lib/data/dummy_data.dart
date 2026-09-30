@@ -13,18 +13,18 @@ final List<Flower> dummyFlowers = [
   Flower(
     id: 'f1',
     name: 'Mawar Merah',
-    category: 'Bunga Potong',
+    category: 'supercar',
     price: 45000,
     rating: 4.8,
     description: 'Mawar merah segar melambangkan cinta dan kasih sayang. Cocok untuk hadiah spesial, perayaan, atau sekadar mempercantik ruangan.',
-    imageUrl: 'https://img.pikbest.com/origin/09/17/05/62EpIkbEsTQ8w.jpg!bw800',
+    imageUrl: 'https://images.pexels.com/photos/38994655/pexels-photo-38994655.jpeg',
     icon: Icons.local_florist,
     color: Colors.red.shade300,
   ),
   Flower(
     id: 'f2',
     name: 'Tulip Kuning',
-    category: 'Bunga Potong',
+    category: 'Touring',
     price: 60000,
     rating: 4.6,
     description: 'Tulip kuning ceria membawa nuansa hangat dan bahagia. Sempurna untuk mengucapkan selamat atau memberi semangat.',
@@ -35,7 +35,7 @@ final List<Flower> dummyFlowers = [
   Flower(
     id: 'f3',
     name: 'Anggrek Ungu',
-    category: 'Tanaman Hias',
+    category: 'family car',
     price: 120000,
     rating: 4.9,
     description: 'Anggrek ungu elegan yang tahan lama, cocok sebagai penghias meja kerja maupun ruang tamu.',
@@ -46,7 +46,7 @@ final List<Flower> dummyFlowers = [
   Flower(
     id: 'f4',
     name: 'Matahari (Sunflower)',
-    category: 'Bunga Potong',
+    category: 'Race car',
     price: 35000,
     rating: 4.7,
     description: 'Bunga matahari yang cerah dan besar, simbol kebahagiaan dan optimisme. Cocok untuk mempercantik hari-harimu.',
@@ -90,7 +90,7 @@ final List<Flower> dummyFlowers = [
   Flower(
     id: 'f8',
     name: 'Daisy Putih',
-    category: 'Bunga Potong',
+    category: 'Electric',
     price: 30000,
     rating: 4.3,
     description: 'Daisy putih yang manis dan sederhana, cocok untuk buket kasual sehari-hari.',
@@ -102,21 +102,23 @@ final List<Flower> dummyFlowers = [
 
 final List<PromoBanner> dummyBanners = [
   PromoBanner(
-    title: 'Diskon 20%',
-    subtitle: 'Untuk semua buket mawar minggu ini',
-    imageUrl: 'https://img.pikbest.com/origin/09/17/05/62EpIkbEsTQ8w.jpg!bw800',
-    gradientColors: [Color(0xFFE85C8A), Color(0xFFB23A63)],
+    title: 'enyamanan keluarga',
+    subtitle: 'Untuk semua koleksi family car minggu ini',
+    imageUrl: 'https://images.pexels.com/photos/14776716/pexels-photo-14776716.jpeg',
+    gradientColors: [Color.fromARGB(255, 178, 178, 186), Color.fromARGB(255, 48, 54, 101)],
   ),
   PromoBanner(
-    title: 'Koleksi Pernikahan',
-    subtitle: 'Rangkaian bunga eksklusif untuk hari bahagiamu',
-    imageUrl: 'https://loremflickr.com/640/480/peony?lock=1',
-    gradientColors: const [Color(0xFF8E5FBF), Color(0xFF5B3A87)],
+    title: 'siap penuhi garasimu',
+    subtitle: 'supercar eksklusif kami untuk hari bahagiamu',
+    imageUrl: 'https://images.pexels.com/photos/35558307/pexels-photo-35558307.png',
+    gradientColors: const [Color.fromARGB(255, 203, 203, 218), Color.fromARGB(255, 133, 147, 184)],
   ),
   PromoBanner(
-    title: 'Gratis Ongkir',
-    subtitle: 'Se-Jabodetabek untuk pembelian di atas Rp100.000',
-    imageUrl: 'https://loremflickr.com/640/480/sunflower?lock=1',
-    gradientColors: const [Color(0xFFE8A33D), Color(0xFFC97A1F)],
+    title: 'tingkatkan eksplorasi',
+    subtitle: 'koleksi untuk meningkatkan kenyamanan touring kamu',
+    imageUrl: 'https://images.pexels.com/photos/28728200/pexels-photo-28728200.jpeg',
+    gradientColors: const [Color.fromARGB(255, 187, 173, 96), Color.fromARGB(255, 213, 219, 89)],
   ),
 ];
+
+

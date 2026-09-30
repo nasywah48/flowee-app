@@ -20,14 +20,14 @@ class LoginBrandHeader extends StatelessWidget {
             )
           ),
           child: Icon(
-            Icons.local_florist_rounded,
+            Icons.directions_car_rounded,
             size: 40,
             color: Colors.white,
           ),
         ),
         SizedBox(height: 20),
         Text(
-          'Flowee',
+          'PuspaRa',
           style: AppTheme.display(
             fontSize: 32,
             color: Colors.white,
@@ -36,7 +36,7 @@ class LoginBrandHeader extends StatelessWidget {
         ),
         SizedBox(height: 6),
         Text(
-          'Rangkaian bunga segar, dikirim dengan cintsa',
+          'Temukan Kendaraan, Mulai Perjalanan Baru Bersama',
           textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.white.withValues(alpha: 0.85),
