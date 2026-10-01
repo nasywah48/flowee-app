@@ -1,7 +1,6 @@
 import 'package:flowee_app/data/dummy_data.dart';
 import 'package:flowee_app/screens/main_screen.dart';
 import 'package:flowee_app/state/auth_controller.dart';
-import 'package:flowee_app/theme/app_theme.dart';
 import 'package:flowee_app/widgets/decorative_glow.dart';
 import 'package:flowee_app/widgets/login_brand_header.dart';
 import 'package:flowee_app/widgets/login_form_card.dart';
@@ -108,8 +107,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           child: Center(
                             child: Image.asset(
                               'assets/images/google_logo.png',
-                              width: 22,
-                              height: 22,
+                              width: 28,
+                              height: 28,
                             ),
                           ),
                         ),
@@ -132,9 +131,9 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                           child: Center(
                             child: Image.asset(
-                              'assets/images/discord.png',
-                              width: 22,
-                              height: 22,
+                              'assets/images/instagram_logo.png',
+                              width: 28,
+                              height: 28,
                             ),
                           ),
                         ),
@@ -157,9 +156,9 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                           child: Center(
                             child: Image.asset(
-                              'assets/images/facebook.png',
-                              width: 22,
-                              height: 22,
+                              'assets/images/whatsapp_logo.png',
+                              width: 28,
+                              height: 28,
                             ),
                           ),
                         ),
