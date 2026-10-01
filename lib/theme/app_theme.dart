@@ -6,7 +6,7 @@ class AppTheme {
   static const Color primaryDark = Color.fromARGB(255, 0, 126, 216);
   static const Color primarySoft = Color.fromARGB(255, 179, 223, 255);
   static const Color leaf = Color(0xFF4C7A5D);
-  static const Color background = Color(0xFFFFFAF6);
+  static const Color background = Color.fromARGB(255, 255, 252, 230);
   static const Color surface = Colors.white;
   static const Color textPrimary = Color(0xFF2B2730);
   static const Color textSecondary = Color(0xFF938C97);

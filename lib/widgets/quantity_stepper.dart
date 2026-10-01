@@ -18,7 +18,7 @@ class QuantityStepper extends StatelessWidget {
           style: TextStyle(
             fontSize: 15,
             fontWeight: FontWeight.w700,
-            color: AppTheme.textPrimary
+            color: Colors.white
           ),
         ),
         Row(
@@ -28,7 +28,7 @@ class QuantityStepper extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 18),
               child: Text(
                 '$quantity',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.white),
               ),
             ),
             _StepperButton(icon: Icons.add_rounded, onTap: onIncrement)
@@ -54,10 +54,10 @@ class _StepperButton extends StatelessWidget {
         width: 34,
         height: 34,
         decoration: BoxDecoration(
-          color: AppTheme.primary.withValues(alpha: 0.1),
+          color: Colors.white.withValues(alpha: 0.1),
           borderRadius: BorderRadius.circular(10)
         ),
-        child: Icon(icon, size: 18, color: AppTheme.primaryDark,),
+        child: Icon(icon, size: 18, color: AppTheme.primarySoft,),
       ),
     );
   }

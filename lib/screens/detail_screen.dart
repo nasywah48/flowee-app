@@ -44,7 +44,7 @@ class _DetailScreenState extends State<DetailScreen> {
     final flower = widget.flower;
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       body: Column(
         children: [
           DetailHeader(flower: flower, onBack: () => Navigator.of(context).pop()),
@@ -52,7 +52,7 @@ class _DetailScreenState extends State<DetailScreen> {
             child: Container(
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Colors.black,
                 borderRadius: BorderRadius.vertical(top: Radius.circular(28))
               ),
               child: SingleChildScrollView(
@@ -69,14 +69,14 @@ class _DetailScreenState extends State<DetailScreen> {
                       style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.w700,
-                        color: AppTheme.primary
+                        color: AppTheme.primarySoft
                       ),
                     ),
                     SizedBox(height: 8),
                     Text(
                       flower.description,
                       style: TextStyle(
-                        color: AppTheme.textSecondary,
+                        color: Colors.grey,
                         height: 1.6,
                         fontSize: 13.5
                       ),
@@ -98,10 +98,10 @@ class _DetailScreenState extends State<DetailScreen> {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: _addToCart, 
         backgroundColor: AppTheme.primary,
-        foregroundColor: Colors.white,
+        foregroundColor: Colors.black87,
         elevation: 2,
         icon: Icon(Icons.shopping_bag_outlined, size: 20),
-        label: Text('tambeh', style: TextStyle(fontWeight: FontWeight.w700)),
+        label: Text('tambah', style: TextStyle(fontWeight: FontWeight.w700)),
       ),
       bottomNavigationBar: DetailTotalBar(totalPrice: flower.price * _quantity),
     );

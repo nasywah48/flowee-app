@@ -30,7 +30,8 @@ class FlowerCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Expanded(
+            AspectRatio(
+              aspectRatio: 4 / 3,
               child: Stack(
                 fit: StackFit.expand,
                 children: [
@@ -65,11 +66,11 @@ class FlowerCard extends StatelessWidget {
                           onTap: () => FavoritesController.instance.toggle(flower.id),
                           child: CircleAvatar(
                             radius: 16,
-                            backgroundColor: Colors.white,
+                            backgroundColor: Colors.transparent,
                             child: Icon(
                               isFav ? Icons.favorite : Icons.favorite_border,
                               size: 18,
-                              color: isFav ? AppTheme.primary : Colors.grey,
+                              color: isFav ? const Color.fromARGB(255, 214, 70, 123) : Colors.grey,
                             ),
                           ),
                         );
@@ -91,7 +92,7 @@ class FlowerCard extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.w700,
                       fontSize: 14,
-                      color: AppTheme.textPrimary
+                      color: AppTheme.textPrimary,
                     ),
                   ),
                   SizedBox(height: 5),
@@ -100,9 +101,9 @@ class FlowerCard extends StatelessWidget {
                     style: TextStyle(
                       color: AppTheme.primaryDark,
                       fontWeight: FontWeight.w400,
-                      fontSize: 14
+                      fontSize: 14,
                     ),
-                  )
+                  ),
                 ],
               ),
             )

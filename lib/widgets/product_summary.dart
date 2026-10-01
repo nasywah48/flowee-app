@@ -20,7 +20,11 @@ class productSummary extends StatelessWidget {
               SizedBox(height: 10),
               Text(
                 flower.name,
-                style: AppTheme.display(fontSize: 24),
+                style: TextStyle(
+                  color: Colors.white, 
+                  fontWeight: FontWeight.w700,
+                  fontSize: 24,
+                )
               )
             ],
           ),
@@ -41,13 +45,13 @@ class _CategoryBadge extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       decoration: BoxDecoration(
-        color: AppTheme.leaf.withValues(alpha: 0.12),
+        color: AppTheme.leaf.withValues(alpha: 4),
         borderRadius: BorderRadius.circular(20)
       ),
       child: Text(
         text,
         style: TextStyle(
-          color: AppTheme.leaf,
+          color: Colors.white,
           fontSize: 11,
           fontWeight: FontWeight.w700
         ),
@@ -77,7 +81,7 @@ class _RatingBadge extends StatelessWidget {
           Text(
             rating.toString(),
             style: TextStyle(
-              color: AppTheme.textPrimary,
+              color: Colors.white,
               fontWeight: FontWeight.w700
             ),
           )

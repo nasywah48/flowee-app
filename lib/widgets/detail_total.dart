@@ -12,7 +12,7 @@ class DetailTotalBar extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.fromLTRB(22, 14, 22, 14),
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Colors.black,
           boxShadow: [
             BoxShadow(
               color: Colors.black.withValues(alpha: 0.06),
@@ -25,14 +25,14 @@ class DetailTotalBar extends StatelessWidget {
           children: [
             Text(
               'Total Harga',
-              style: TextStyle(fontSize: 13, color: AppTheme.textSecondary),
+              style: TextStyle(fontSize: 13, color: Colors.white),
             ),
             Text(
               formatRupiah(totalPrice),
               style: TextStyle(
                 fontSize: 19,
                 fontWeight: FontWeight.w800,
-                color: AppTheme.primaryDark
+                color: AppTheme.primarySoft
               ),
             )
           ],

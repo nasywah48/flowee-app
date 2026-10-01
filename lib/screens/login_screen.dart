@@ -53,7 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.primaryDark,
+      backgroundColor: const Color.fromARGB(255, 0, 149, 255),
       body: Container(
         width: double.infinity,
         height: double.infinity,
@@ -61,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [AppTheme.primary, AppTheme.primaryDark],
+            colors: [Color.fromARGB(255, 4, 132, 224), Color.fromARGB(255, 21, 110, 174)],
           ),
         ),
         // Stack menumpuk beberapa widget di atas satu sama lain. Di sini:
@@ -85,6 +85,85 @@ class _LoginScreenState extends State<LoginScreen> {
                       passwordController: _passwordController,
                       isLoading: _isLoading,
                       onSubmit: _login,
+                    ),
+                    const SizedBox(height: 24),
+
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 52,
+                          height: 52,
+                          decoration: BoxDecoration(
+                            color: Colors.white.withValues(alpha: 0.9),
+                            borderRadius: BorderRadius.circular(16),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withValues(alpha: 0.12),
+                                blurRadius: 12,
+                                offset: const Offset(0, 5),
+                              ),
+                            ],
+                          ),
+                          child: Center(
+                            child: Image.asset(
+                              'assets/images/google_logo.png',
+                              width: 22,
+                              height: 22,
+                            ),
+                          ),
+                        ),
+
+                        const SizedBox(width: 16),
+
+                        Container(
+                          width: 52,
+                          height: 52,
+                          decoration: BoxDecoration(
+                            color: Colors.white.withValues(alpha: 0.9),
+                            borderRadius: BorderRadius.circular(16),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withValues(alpha: 0.12),
+                                blurRadius: 12,
+                                offset: const Offset(0, 5),
+                              ),
+                            ],
+                          ),
+                          child: Center(
+                            child: Image.asset(
+                              'assets/images/discord.png',
+                              width: 22,
+                              height: 22,
+                            ),
+                          ),
+                        ),
+
+                        const SizedBox(width: 16),
+
+                        Container(
+                          width: 52,
+                          height: 52,
+                          decoration: BoxDecoration(
+                            color: Colors.white.withValues(alpha: 0.9),
+                            borderRadius: BorderRadius.circular(16),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withValues(alpha: 0.12),
+                                blurRadius: 12,
+                                offset: const Offset(0, 5),
+                              ),
+                            ],
+                          ),
+                          child: Center(
+                            child: Image.asset(
+                              'assets/images/facebook.png',
+                              width: 22,
+                              height: 22,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),

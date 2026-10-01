@@ -76,6 +76,7 @@ class _LoginFormCardState extends State<LoginFormCard> {
                */
               validator: (value) => (value == null || value.isEmpty) ? 'Email kamu masih kosong' : null,
             ),
+
             SizedBox(height: 14),
             TextFormField(
               controller: widget.passwordController,
@@ -90,6 +91,31 @@ class _LoginFormCardState extends State<LoginFormCard> {
               ),
               validator: (value) => (value == null || value.isEmpty) ? 'Password kamu masih kosong' : null,
             ),
+            
+            // Lupa PW
+            SizedBox(height: 20),
+            Align(
+              alignment: Alignment.centerRight,
+              child: TextButton(
+                onPressed: () {
+                  // TODO: navigasi ke halaman lupa password
+                },
+                style: TextButton.styleFrom(
+                  padding: EdgeInsets.zero,
+                  minimumSize: Size.zero,
+                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                ),
+                child: Text(
+                  'Lupa kata sandi?',
+                  style: TextStyle(
+                    color: AppTheme.primaryDark,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+            ),
+
             SizedBox(height: 26),
             ElevatedButton(
               onPressed: widget.isLoading ? null : widget.onSubmit,

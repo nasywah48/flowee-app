@@ -66,7 +66,7 @@ return SafeArea(
                   crossAxisCount: 2,
                   mainAxisSpacing: 16,
                   crossAxisSpacing: 16,
-                  childAspectRatio: 0.68,
+                  childAspectRatio: 0.90,
                 ),
                 delegate: SliverChildBuilderDelegate(
                   (context, index) => FlowerCard(

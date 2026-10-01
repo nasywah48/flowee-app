@@ -17,12 +17,12 @@ class CircleIconButton extends StatelessWidget {
         width: 42,
         height: 42,
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Colors.white.withValues(alpha: 0),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withValues(alpha: 0.12),
+              color: Colors.white.withValues(alpha: 0.12),
               blurRadius: 10,
-              offset: Offset(0, 3)
+              offset: Offset(0, 3),
             ),
           ],
         ),

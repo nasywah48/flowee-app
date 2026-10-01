@@ -54,7 +54,7 @@ class _MainScreenState extends State<MainScreen> {
               Expanded(
                 child: BottomNavItem(
                   icon: Icons.favorite_rounded,
-                  label: 'Favorite',
+                  label: 'Wishlist',
                   selected: _selectedIndex == 1,
                   onTap: () => setState(() => _selectedIndex = 1),
                 )
