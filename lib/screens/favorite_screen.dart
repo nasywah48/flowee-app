@@ -37,7 +37,7 @@ class FavoriteScreen extends StatelessWidget {
                     crossAxisCount: 2,
                     mainAxisSpacing: 16,
                     crossAxisSpacing: 16,
-                    childAspectRatio: 0.68,
+                    childAspectRatio: 0.85,
                   ),
                   itemCount: favoriteFlowers.length,
                   itemBuilder: (context, index) {
