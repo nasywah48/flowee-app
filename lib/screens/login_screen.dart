@@ -91,8 +91,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          width: 52,
-                          height: 52,
+                          width: 48,
+                          height: 48,
                           decoration: BoxDecoration(
                             color: Colors.white.withValues(alpha: 0.9),
                             borderRadius: BorderRadius.circular(16),
@@ -105,19 +105,18 @@ class _LoginScreenState extends State<LoginScreen> {
                             ],
                           ),
                           child: Center(
-                            child: Image.asset(
-                              'assets/images/google_logo.png',
+                            child: Image.asset('assets/images/google_logo.png',
                               width: 28,
                               height: 28,
                             ),
                           ),
                         ),
 
-                        const SizedBox(width: 16),
+                        const SizedBox(width: 24),
 
                         Container(
-                          width: 52,
-                          height: 52,
+                          width: 48,
+                          height: 48,
                           decoration: BoxDecoration(
                             color: Colors.white.withValues(alpha: 0.9),
                             borderRadius: BorderRadius.circular(16),
@@ -130,19 +129,18 @@ class _LoginScreenState extends State<LoginScreen> {
                             ],
                           ),
                           child: Center(
-                            child: Image.asset(
-                              'assets/images/instagram_logo.png',
+                            child: Image.asset('assets/images/instagram_logo.png',
                               width: 28,
                               height: 28,
                             ),
                           ),
                         ),
 
-                        const SizedBox(width: 16),
+                        const SizedBox(width: 24),
 
                         Container(
-                          width: 52,
-                          height: 52,
+                          width: 48,
+                          height: 48,
                           decoration: BoxDecoration(
                             color: Colors.white.withValues(alpha: 0.9),
                             borderRadius: BorderRadius.circular(16),
@@ -155,13 +153,12 @@ class _LoginScreenState extends State<LoginScreen> {
                             ],
                           ),
                           child: Center(
-                            child: Image.asset(
-                              'assets/images/whatsapp_logo.png',
+                            child: Image.asset('assets/images/whatsapp.png',
                               width: 28,
                               height: 28,
                             ),
                           ),
-                        ),
+                        )
                       ],
                     ),
                   ],

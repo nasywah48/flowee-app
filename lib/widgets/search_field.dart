@@ -18,7 +18,7 @@ class SearchField extends StatelessWidget {
     return TextField(
       onChanged: onChanged,
       decoration: InputDecoration(
-        hintText: 'Cari mawar, tulip, atau anggrek...',
+        hintText: 'Cari mobil impian kamu disini...',
         hintStyle: TextStyle(color: AppTheme.textSecondary, fontSize: 13.5),
         prefixIcon: Icon(Icons.search_rounded, color: AppTheme.textSecondary),
         border: OutlineInputBorder(

@@ -1,3 +1,4 @@
+import 'package:flowee_app/screens/cart_screen.dart';
 import 'package:flowee_app/screens/favorite_screen.dart';
 import 'package:flowee_app/screens/home_screen.dart';
 import 'package:flowee_app/widgets/bottom_nav_item.dart';
@@ -13,7 +14,7 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
 
-  static const _screens = [HomeScreen(), FavoriteScreen()];
+  static const _screens = [HomeScreen(), FavoriteScreen(), CartScreen()];
   // shell adalah metode untuk menampung 2 atau lebih, agar mampu bernafigasi dengan index dan bukan dengan navigator.
   // klo pake navigator nanti bakal crash kata miss tia
 
@@ -57,6 +58,14 @@ class _MainScreenState extends State<MainScreen> {
                   label: 'Wishlist',
                   selected: _selectedIndex == 1,
                   onTap: () => setState(() => _selectedIndex = 1),
+                )
+              ),
+              Expanded(
+                child: BottomNavItem(
+                  icon: Icons.shopping_cart_sharp,
+                  label: 'cart',
+                  selected: _selectedIndex == 2,
+                  onTap: () => setState(() => _selectedIndex = 2),
                 )
               )
             ],

@@ -1,4 +1,5 @@
 import 'package:flowee_app/models/flower.dart';
+import 'package:flowee_app/state/cart_controller.dart';
 import 'package:flowee_app/theme/app_theme.dart';
 import 'package:flowee_app/widgets/detail_header.dart';
 import 'package:flowee_app/widgets/detail_total.dart';
@@ -32,9 +33,15 @@ class _DetailScreenState extends State<DetailScreen> {
 
   void _addToCart() {
     final flower = widget.flower;
+    CartController.instance.addToCart(
+      flower,
+      _quantity,
+    );
+
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text('$_quantity x ${flower.name} ditambahkan ke keranjang'),
+        content: Text('$_quantity x ${flower.name} ditambahkan ke keranjang',
+        )
       )
     );
   }
@@ -104,6 +111,6 @@ class _DetailScreenState extends State<DetailScreen> {
         label: Text('tambah', style: TextStyle(fontWeight: FontWeight.w700)),
       ),
       bottomNavigationBar: DetailTotalBar(totalPrice: flower.price * _quantity),
-    );
+    );  
   }
 }
